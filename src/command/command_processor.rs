@@ -9,7 +9,6 @@
 use std::io::{Read, Write};
 
 use std::ops::{Deref, DerefMut};
-use bytes::Buf;
 use crate::command::Command;
 
 /// Like BufReader and BufWriter, provide optimized Command read/write operation to stream.
@@ -29,7 +28,7 @@ impl<S: Read + Write> CommandProcessor<S> {
         }
     }
 
-    fn read_command(&mut self) -> Option<Command> {
+    pub fn read_command(&mut self) -> Option<Command> {
         match self.stream.read(&mut self.read_buffer) {
             Ok(read_bytes) => {
                 if read_bytes < 22 {
@@ -38,14 +37,14 @@ impl<S: Read + Write> CommandProcessor<S> {
                 let buffer = &self.read_buffer[0..read_bytes];
                 Some(bincode::deserialize(buffer).unwrap())
             },
-            Err(e) => None
+            Err(_) => None
         }
     }
 
     /// Write command to stream.
     pub fn write_command(&mut self, command: Command) {
         let mut cursor = Vec::with_capacity(command.header.data_size as usize + 22);
-        bincode::serialize_into(&mut cursor, &command);
+        bincode::serialize_into(&mut cursor, &command).unwrap();
 
         self.write(&cursor).unwrap();
     }

@@ -5,17 +5,7 @@
     <cargoProject FILE="$PROJECT_DIR$/loco-protocol-derive/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d2903d-e2c9-45c6-bbf3-e4a58130e092" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/command/header.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/builder.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/processor.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/command_processor.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/secure.rs" beforeDir="false" />
-    </list>
+    <list default="true" id="19d2903d-e2c9-45c6-bbf3-e4a58130e092" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607102807085</updated>
-      <workItem from="1607102813476" duration="10111000" />
+      <workItem from="1607102813476" duration="10417000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,6 @@
  */
 
 use std::io::{Write, Read};
-use crate::command::CommandPair;
 
 pub mod command;
 

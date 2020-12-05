@@ -4,13 +4,15 @@
  * Copyright (c) storycraft. Licensed under the MIT Licence.
  */
 
-pub mod command_processor;
+mod command_processor;
 
 mod header;
 
 use serde::{Deserialize, Serialize};
-use crate::command::header::Header;
 use crate::{Encode, Decode};
+
+pub use command_processor::CommandProcessor;
+pub use header::Header;
 
 #[derive(Serialize, Deserialize, Clone, PartialEq, Eq, Debug)]
 pub struct Command {
