@@ -5,7 +5,15 @@
     <cargoProject FILE="$PROJECT_DIR$/loco-protocol-derive/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d2903d-e2c9-45c6-bbf3-e4a58130e092" name="Default Changelist" comment="" />
+    <list default="true" id="19d2903d-e2c9-45c6-bbf3-e4a58130e092" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/loco-protocol-rs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/loco-protocol-rs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/command_processor.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/header.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,17 +57,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Cargo.build">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="build" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="build" />
@@ -93,6 +90,7 @@
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$PROJECT_DIR$/../.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -102,7 +100,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607102807085</updated>
-      <workItem from="1607102813476" duration="10417000" />
+      <workItem from="1607102813476" duration="10526000" />
+      <workItem from="1607142734154" duration="327000" />
     </task>
     <servers />
   </component>
@@ -118,22 +117,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607109743888" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1607142034961">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1607142599519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607142034961" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1607142034961">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607142599519" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1607142599518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607142034961" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1607142034960">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607142599518" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1607142599518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607142034960" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1607142034961">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607142599518" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1607142599518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607142034961" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607142599518" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1607108357866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
