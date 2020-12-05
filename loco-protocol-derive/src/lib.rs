@@ -46,10 +46,6 @@ pub fn derive_loco_packet_pair(input: TokenStream) -> TokenStream {
         }
 
         impl loco_protocol::LocoResponse for #response {}
-
-        impl loco_protocol::command::LocoPacketPair<#request, #response> for #name {
-            const NAME: &'static str = &stringify!(#name_uppercase);
-        }
     };
 
     token_stream.into()
