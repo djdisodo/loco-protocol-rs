@@ -9,17 +9,17 @@
 use std::io::{Read, Write};
 
 use std::ops::{Deref, DerefMut};
-use crate::command::Command;
+use crate::RawLocoPacket;
 
 /// Like BufReader and BufWriter, provide optimized Command read/write operation to stream.
-pub struct CommandProcessor<S: Read + Write> {
+pub struct RawLocoClient<S: Read + Write> {
     
     pub stream: S,
     read_buffer: [u8; 2048]
     
 }
 
-impl<S: Read + Write> CommandProcessor<S> {
+impl<S: Read + Write> RawLocoClient<S> {
 
     pub fn new(stream: S) -> Self {
         Self {
@@ -28,7 +28,7 @@ impl<S: Read + Write> CommandProcessor<S> {
         }
     }
 
-    pub fn read_command(&mut self) -> Option<Command> {
+    pub fn read_raw_loco_packet(&mut self) -> Option<RawLocoPacket> {
         match self.stream.read(&mut self.read_buffer) {
             Ok(read_bytes) => {
                 if read_bytes < 22 {
@@ -41,17 +41,16 @@ impl<S: Read + Write> CommandProcessor<S> {
         }
     }
 
-    /// Write command to stream.
-    pub fn write_command(&mut self, command: Command) {
-        let mut cursor = Vec::with_capacity(command.header.data_size as usize + 22);
-        bincode::serialize_into(&mut cursor, &command).unwrap();
+    pub fn write_raw_loco_packet(&mut self, raw_loco_packet: RawLocoPacket) {
+        let mut cursor = Vec::with_capacity(raw_loco_packet.header.data_size as usize + 22);
+        bincode::serialize_into(&mut cursor, &raw_loco_packet).unwrap();
 
         self.write(&cursor).unwrap();
     }
 
 }
 
-impl<T: Write + Read> Deref for CommandProcessor<T> {
+impl<T: Write + Read> Deref for RawLocoClient<T> {
     type Target = T;
 
     fn deref(&self) -> &Self::Target {
@@ -59,7 +58,7 @@ impl<T: Write + Read> Deref for CommandProcessor<T> {
     }
 }
 
-impl<T: Write + Read> DerefMut for CommandProcessor<T> {
+impl<T: Write + Read> DerefMut for RawLocoClient<T> {
 
     fn deref_mut(&mut self) -> &mut Self::Target {
         &mut self.stream

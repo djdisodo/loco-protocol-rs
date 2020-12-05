@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 use std::string::FromUtf8Error;
 
 #[derive(Serialize, Deserialize, Clone, PartialEq, Eq, Debug)]
-pub struct Header {
+pub struct LocoHeader {
 	pub id: u32,
 	pub status: i16,
 	pub name: [u8; 11],
@@ -10,7 +10,7 @@ pub struct Header {
 	pub data_size: u32
 }
 
-impl Header {
+impl LocoHeader {
 
 	/// Extract String from name field
 	pub fn name(&self) -> Result<String, FromUtf8Error> {

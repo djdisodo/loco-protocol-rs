@@ -8,6 +8,10 @@
     <list default="true" id="19d2903d-e2c9-45c6-bbf3-e4a58130e092" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loco-protocol-derive/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/loco-protocol-derive/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loco-protocol/src/command/command_processor.rs" beforeDir="false" afterPath="$PROJECT_DIR$/loco-protocol/src/raw_loco_client.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loco-protocol/src/command/header.rs" beforeDir="false" afterPath="$PROJECT_DIR$/loco-protocol/src/header.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loco-protocol/src/command/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loco-protocol/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/loco-protocol/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +45,12 @@
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\djdis\loco-protocol-rs\loco-protocol\src" />
+      <recent name="C:\Users\djdis\loco-protocol-rs\src\command" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\djdis\loco-protocol-rs\loco-protocol" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\djdis\loco-protocol-rs\src\command" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -55,6 +60,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Cargo.build">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="build" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="build" />
@@ -101,7 +117,8 @@
       <workItem from="1607102813476" duration="10526000" />
       <workItem from="1607142734154" duration="594000" />
       <workItem from="1607144978954" duration="147000" />
-      <workItem from="1607145344927" duration="1292000" />
+      <workItem from="1607145344927" duration="1352000" />
+      <workItem from="1607146801320" duration="4751000" />
     </task>
     <servers />
   </component>
@@ -113,10 +130,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1607105935606" />
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1607109743888">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1607148441535">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607109743888" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607148441535" />
+    <state x="300" y="0" key="CommitChangelistDialog2" timestamp="1607149213892">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="300" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607149213892" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1607142599519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -133,9 +154,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607142599518" />
+    <state x="498" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607150136310">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="498" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1607150136310" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1607108357866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1607108357866" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1607151496342">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607151496342" />
   </component>
 </project>
