@@ -12,7 +12,6 @@ impl syn::parse::Parse for LocoPacketPair {
     fn parse<'a>(input: &'a ParseBuffer<'a>) -> Result<Self, Error> {
         let content;
         syn::parenthesized!(content in input);
-        content.parse::<Token![,]>()?;
         let type1 = content.parse()?;
         content.parse::<Token![,]>()?;
         let type2 = content.parse()?;
