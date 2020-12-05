@@ -16,3 +16,5 @@ maintenance = { status = "passively-maintained" }
 serde = { version = "1.0", features = ["derive"] }
 bincode = "1.3.1"
 openssl = "0.10.30"
+bytes = "0.6"
+loco-protocol-derive = { path = "loco-protocol-derive" }
