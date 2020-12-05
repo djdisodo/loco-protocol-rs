@@ -41,27 +41,3 @@ pub fn name_command(input: TokenStream) -> TokenStream {
 
     token_stream.into()
 }
-
-#[proc_macro_derive(RequestCommand)]
-pub fn request_command(input: TokenStream) -> TokenStream {
-    let derive_input: DeriveInput = syn::parse(input).unwrap();
-    let name = derive_input.ident;
-
-    let token_stream = quote! {
-        impl loco_protocol::command::PairedCommandRequest for #name {}
-    };
-
-    token_stream.into()
-}
-
-#[proc_macro_derive(ResponseCommand)]
-pub fn response_command(input: TokenStream) -> TokenStream {
-    let derive_input: DeriveInput = syn::parse(input).unwrap();
-    let name = derive_input.ident;
-
-    let token_stream = quote! {
-        impl loco_protocol::command::PairedCommandResponse for #name {}
-    };
-
-    token_stream.into()
-}
