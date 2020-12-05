@@ -5,15 +5,7 @@
     <cargoProject FILE="$PROJECT_DIR$/loco-protocol-derive/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d2903d-e2c9-45c6-bbf3-e4a58130e092" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/loco-protocol-rs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/loco-protocol-rs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/command_processor.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/header.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/mod.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" />
-    </list>
+    <list default="true" id="19d2903d-e2c9-45c6-bbf3-e4a58130e092" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,11 +33,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/loco-protocol" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\djdis\loco-protocol-rs\loco-protocol" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\djdis\loco-protocol-rs\src\command" />
     </key>
@@ -101,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607102807085</updated>
       <workItem from="1607102813476" duration="10526000" />
-      <workItem from="1607142734154" duration="327000" />
+      <workItem from="1607142734154" duration="594000" />
     </task>
     <servers />
   </component>
