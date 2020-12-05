@@ -20,14 +20,14 @@ impl syn::parse::Parse for LocoPacketPair {
     }
 }
 
-#[proc_macro_derive(LocoPacketPair, attributes(command_pair))]
+#[proc_macro_derive(LocoPacketPair, attributes(loco_packet_pair))]
 pub fn derive_loco_packet_pair(input: TokenStream) -> TokenStream {
     let derive_input: DeriveInput = syn::parse(input).unwrap();
     let attribute = derive_input.attrs.iter().filter(
-        |a| a.path.segments.len() == 1 && a.path.segments[0].ident == "my_trait"
-    ).nth(0).expect("attribute packet_pair(request, response)");
+        |a| a.path.segments.len() == 1 && a.path.segments[0].ident == "loco_packet_pair"
+    ).nth(0).expect("attribute loco_packet_pair(request, response)");
 
-    let command_pair: LocoPacketPair = syn::parse2(attribute.tokens.clone()).expect("Invalid my_trait attribute!");
+    let command_pair: LocoPacketPair = syn::parse2(attribute.tokens.clone()).expect("Invalid loco_packet_pair attribute!");
 
     let name = derive_input.ident;
     let request = command_pair.0;

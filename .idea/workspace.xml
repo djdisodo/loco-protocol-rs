@@ -5,14 +5,7 @@
     <cargoProject FILE="$PROJECT_DIR$/loco-protocol-derive/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d2903d-e2c9-45c6-bbf3-e4a58130e092" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loco-protocol-derive/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/loco-protocol-derive/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loco-protocol/src/command/command_processor.rs" beforeDir="false" afterPath="$PROJECT_DIR$/loco-protocol/src/raw_loco_client.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loco-protocol/src/command/header.rs" beforeDir="false" afterPath="$PROJECT_DIR$/loco-protocol/src/header.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loco-protocol/src/command/mod.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loco-protocol/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/loco-protocol/src/lib.rs" afterDir="false" />
-    </list>
+    <list default="true" id="19d2903d-e2c9-45c6-bbf3-e4a58130e092" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,17 +53,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Cargo.build">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="build" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="build" />
@@ -118,7 +100,7 @@
       <workItem from="1607142734154" duration="594000" />
       <workItem from="1607144978954" duration="147000" />
       <workItem from="1607145344927" duration="1352000" />
-      <workItem from="1607146801320" duration="4751000" />
+      <workItem from="1607146801320" duration="4786000" />
     </task>
     <servers />
   </component>
